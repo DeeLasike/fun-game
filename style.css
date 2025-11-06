@@ -1,0 +1,23 @@
+html, body { margin: 0; height: 100%; background: #00111a; color: #fff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+#game-container { width: 100%; height: 100vh; display: block; overflow: hidden; }
+h1 { position: absolute; left: 12px; top: 8px; margin: 0; font-size: 18px; z-index: 10; }
+
+/* HUD */
+#hud { position: absolute; right: 12px; top: 8px; z-index: 12; text-align: right; }
+#score { background: rgba(0,0,0,0.4); padding: 8px 12px; border-radius: 8px; font-weight: 700; }
+#instructions { margin-top: 8px; font-size: 12px; opacity: 0.9; }
+
+/* Overlay */
+.overlay { position: absolute; inset: 0; display:flex; align-items:center; justify-content:center; z-index:20; }
+.overlay .panel { background: rgba(0,0,0,0.7); padding: 22px; border-radius: 12px; text-align:center; color: #fff; }
+.overlay button { margin-top: 12px; padding: 10px 18px; border-radius: 8px; border: none; background: #ff4d4d; color: white; font-weight:700; cursor:pointer; }
+
+/* Touch controls */
+#touch-controls { position: absolute; left: 12px; bottom: 12px; z-index: 15; display:flex; gap: 10px; }
+.touch-btn { padding: 14px 18px; border-radius: 10px; border: none; background: rgba(255,255,255,0.08); color: #fff; font-size: 18px; }
+.touch-btn:active { transform: translateY(2px); }
+
+@media (min-width: 700px) {
+	/* hide touch controls on desktop */
+	#touch-controls { display: none; }
+}
