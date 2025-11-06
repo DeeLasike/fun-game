@@ -1,38 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super Fun Christmas Game</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Three.js CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/three@0.155.0/build/three.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Santa's Sleigh Ride - Christmas Game</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdn.jsdelivr.net/npm/three@0.155.0/build/three.min.js"></script>
 </head>
 <body>
-    <h1>Super Fun Christmas Game</h1>
-    <div id="game-container"></div>
-
-    <!-- HUD -->
-    <div id="hud">
-        <div id="score">Gifts: 0</div>
-        <div id="instructions">Use ← → or touch the buttons to move. Collect all gifts!</div>
-    </div>
-
-    <!-- Overlay / start & win messages -->
-    <div id="overlay" class="overlay">
-        <div class="panel">
-            <h2 id="overlay-title">Super Fun Christmas Game</h2>
-            <p id="overlay-sub">Collect all the gifts!</p>
-            <button id="start-btn">Start Game</button>
-        </div>
-    </div>
-
-    <!-- Touch controls (mobile) -->
-    <div id="touch-controls">
-        <button id="left-btn" class="touch-btn">◀</button>
-        <button id="right-btn" class="touch-btn">▶</button>
-    </div>
-
-    <script src="script.js"></script>
+	<h1>Santa's Sleigh Ride</h1>
+	<div id="game-container"></div>
+	<div id="score-hud" style="position:absolute;right:16px;top:12px;z-index:10;font-size:18px;color:#fff;">Score: 0</div>
+	<div id="instructions" style="position:absolute;left:16px;bottom:16px;z-index:10;font-size:15px;color:#fff;">Use arrow keys to move. Press Space/Enter to start!</div>
+	<script src="xmas-game.js"></script>
 </body>
 </html>
